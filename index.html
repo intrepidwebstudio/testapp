@@ -32,7 +32,7 @@
                     fileSystem.root.getFile(  
                                 "dummy.html", {create: true, exclusive: false},  
                                 function gotFileEntry(fileEntry){  
-                                var sPath = fileEntry.fullPath.replace("dummy.html","");  
+                                var sPath = 'cdvfile://localhost/persistent/com.aisc.pubnub/';//fileEntry.fullPath.replace("dummy.html","");  
                                 var fileTransfer = new FileTransfer();  
 								var uri = encodeURI("http://www.w3.org/2011/web-apps-ws/papers/Nitobi.pdf");
                                 fileEntry.remove();  
