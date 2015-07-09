@@ -54,7 +54,7 @@
     <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="org.apache.cordova.file" />
-    <gap:plugin name="org.apache.cordova.file-transfer" />
+    
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.globalization" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
@@ -62,7 +62,7 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
-
+<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
     <!-- Third party plugins -->
     <gap:plugin name="com.pushapps.phonegap" version="1.6.0" />
 	<gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" />
