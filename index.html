@@ -40,8 +40,11 @@
                                            uri,
                                            sPath + "theFile.pdf",  
                                            function(theFile) {  
-                                           console.log("download complete: " + theFile.toURI());  
-                                           showLink(theFile.toURI());  
+                                           console.log("download complete: " + theFile.toURL());  
+                                           showLink(theFile.toURL());  
+										   
+										   document.getElementById('imagetag').src=theFile.toURL();
+										   
                                            },  
                                            function(error) {  
                                            console.log("download error source " + error.source);  
@@ -77,6 +80,8 @@
     <p>
         DOWNLOADING FILE...<br />
         <span id="ready"></span>
+        
+        <img id="imagetag" src="" width="100%" style="width:100%" >
     </p>
   </body>
 </html>
