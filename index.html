@@ -40,10 +40,15 @@
                                            uri,
                                            sPath + "intrepidstaff.jpg",  
                                            function(theFile) {  
+										   
+										   alert(document.getElementById('imagetag').src);
+										   
                                            console.log("download complete: " + theFile.toURL());  
                                            showLink(theFile.toURL());  
 										   
 										   document.getElementById('imagetag').src=theFile.toURL();
+										   
+										   alert(document.getElementById('imagetag').src);
 										   
                                            },  
                                            function(error) {  
